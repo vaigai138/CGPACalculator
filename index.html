@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CGPA Calculator</h1>
+        <form id="cgpaForm">
+            <div id="subjectsContainer">
+                <div class="subject">
+                    <label for="grade">Grade:</label>
+                    <select class="grade" required>
+                        <option value="O">O</option>
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                    <label for="credit">Credit:</label>
+                    <input type="number" class="credit" required>
+                </div>
+            </div>
+            <button type="button" id="addSubject">Add Another Subject</button>
+            <button type="submit">Calculate CGPA</button>
+        </form>
+        <div id="result"></div>
+        <div class="design">
+            <span>Designed by <span style="color: blue;"><a href="https://github.com/vaigai138" style="text-decoration: none;">###</a></span></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
